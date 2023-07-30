@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped&family=Roboto&display=swap");
+
+* {
+  font-family: "Noto Sans Thai Looped", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #475569;
+  background-image: radial-gradient(whitesmoke, #475569);
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  color: whitesmoke;
+  background-color: darkblue;
+  padding: 0.5rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: whitesmoke;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+nav a,
+a:visited {
+  text-decoration: none;
+  color: rgb(46, 53, 59);
+}
+
+nav a:hover,
+nav a:focus {
+  opacity: 0.4;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px double;
+}
+
+footer {
+  background-color: darkblue;
+  color: whitesmoke;
+  position: sticky;
+  bottom: 0;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #cbd5e1;
+  scroll-margin-top: 2rem;
+  width: min(350px, 100%);
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+figcaption {
+  text-align: center;
+  font-size: 2rem;
+}
+
+p {
+  text-align: center;
+}
+
+.myname,
+.myname:visited {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.myname:hover,
+.myname:focus {
+  opacity: 0.4;
+}
+
+@media screen and (min-width: 576px) {
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+}
